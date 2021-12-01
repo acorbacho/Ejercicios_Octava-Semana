@@ -1,7 +1,7 @@
 /**
  * Función que engloba la funcionalidad del parking.
  * @param {number} opcion - Opción a ejecutar.
- * @param {object | string | null} dato - Dato necesario según la operacio. Puede ser un vehículo, su matrícula o valor nulo.
+ * @param {(object | string | null)} dato - Dato necesario según la operacio. Puede ser un vehículo, su matrícula o valor nulo.
  */
 function parking(opcion, dato) {
     /**
