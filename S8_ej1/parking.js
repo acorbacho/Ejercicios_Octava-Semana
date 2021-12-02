@@ -24,7 +24,7 @@ function parking(opcion, dato) {
 
         if (datoAux.plazas == 1) {
 
-            for (i = 0; i < plazas_parking.length; i++) {
+            for (let i = 0; i < plazas_parking.length; i++) {
 
                 if (plazas_parking[i] === 'VACÍO') {
                     plazas_parking[i] = datoAux
@@ -40,7 +40,7 @@ function parking(opcion, dato) {
 
         } else if (datoAux.plazas == 2) {
 
-            for (i = 0; i < plazas_parking.length; i++) {
+            for (let i = 0; i < plazas_parking.length; i++) {
 
                 if (plazas_parking[i] === 'VACÍO' && plazas_parking[i - 1] === 'VACÍO') {
                     plazas_parking[i - 1] = datoAux
@@ -58,7 +58,7 @@ function parking(opcion, dato) {
 
     } else if (opcionAux == 2) {
 
-        for (i = 0; i < plazas_parking.length; i++) {
+        for (let i = 0; i < plazas_parking.length; i++) {
 
             if (plazas_parking[i].matricula == datoAux) {
                 plazas_parking[i] = 'VACÍO'
@@ -74,7 +74,7 @@ function parking(opcion, dato) {
 
     } else if (opcionAux == 3) {
 
-        for (i = 0; i < plazas_parking.length; i++) {
+        for (let i = 0; i < plazas_parking.length; i++) {
 
             if (plazas_parking[i] != 'VACÍO') {
                 salida('Plaza [' + i + ']\nTipo de vehículo: ' + plazas_parking[i].nombre + '\nMatrícula: ' + plazas_parking[i].matricula)
